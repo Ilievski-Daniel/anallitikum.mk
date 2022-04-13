@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -13,7 +13,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $cat = Category::all();
+        return view('admin/category',['cat'=>$cat]);
     }
 
     /**
@@ -34,7 +35,17 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,array(
+            'name'=> 'required',
+        ));
+
+        $cat = new Category;
+        $cat->name = $request->name;
+        $cat->save();
+
+        return redirect()->route('category');
+
+
     }
 
     /**
@@ -79,6 +90,8 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $cat = Category::find($id);
+        $cat->delete();
+        return redirect()->route('category');
     }
 }

@@ -32,7 +32,10 @@
                         <th>Create At</th>
                         <th class="text-center" width"130px">
                             <a href="{{ route('post.create') }}" class="btn btn-primary btn-sm">
-                                <i class="bi bi-plus-square-fill"></i>
+                                <i class="bi bi-plus-square-fill"></i><span>Post</span>
+                            </a>
+                            <a href="{{ route('category') }}" class="btn btn-primary btn-sm">
+                                <i class="bi bi-plus-square-fill"></i><span>Category</span>
                             </a>
                         </th>
                     </thead>

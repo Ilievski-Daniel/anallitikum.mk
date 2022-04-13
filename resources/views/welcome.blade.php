@@ -113,7 +113,67 @@
         Вести
       </h3>
     </div>
-    
+    <div class="row row-cols-2 row-cols-md-3 g-3">
+      <div class="col-sm-6">
+        <div class="card textcon bg-dark text-white">
+          <img src="https://www.w3schools.com/w3images/notebook.jpg" class="card-img " alt="..." style="height: 170px ;">
+          <div class="content">
+            <h5 class="fw-bold">Наслов</h5>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm6">
+        <div class="card textcon bg-dark text-white">
+          <img src="https://www.w3schools.com/w3images/notebook.jpg" class="card-img " alt="..." style="height: 170px ;">
+          <div class="content">
+            <h5 class="fw-bold">Наслов</h5>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card textcon bg-red text-white">
+          <img src="https://www.w3schools.com/w3images/notebook.jpg" class="card-img " alt="..." style="height: 170px ;">
+          <div class="content">
+            <h5 class="fw-bold">Наслов</h5>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card textcon bg-dark text-white">
+          <img src="https://www.w3schools.com/w3images/notebook.jpg" class="card-img " alt="..." style="height: 170px ;">
+          <div class="content">
+            <h5 class="fw-bold">Наслов</h5>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card textcon bg-dark text-white">
+          <img src="https://www.w3schools.com/w3images/notebook.jpg" class="card-img " alt="..." style="height: 170px ;">
+          <div class="content">
+            <h5 class="fw-bold">Наслов</h5>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card textcon bg-dark text-white">
+          <img src="https://www.w3schools.com/w3images/notebook.jpg" class="card-img " alt="..." style="height: 170px ;">
+          <div class="content">
+            <h5 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </h5>
+            
+          </div>
+          
+        </div>
+      </div>
       
     </div>
     

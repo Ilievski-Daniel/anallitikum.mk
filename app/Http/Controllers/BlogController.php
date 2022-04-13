@@ -8,6 +8,44 @@ use App\Models\Post;
 
 class BlogController extends Controller
 {
+    
+    public function forum(){
+        
+        $blog = Post::all();
+        return view('blog.forum')->with(['blog' => $blog]);
+    }
+    public function kultura(){
+        $blog = Post::all();
+        return view('blog.kultura')->with(['blog' => $blog]);
+    }
+    public function intervju(){
+        $blog = Post::all();
+        return view('blog.intervju')->with(['blog' => $blog]);
+    }
+    public function filmovi(){
+        $blog = Post::all();
+        return view('blog.filmovi')->with(['blog' => $blog]);
+    }
+    public function sport(){
+        $blog = Post::all();
+        return view('blog.sport')->with(['blog' => $blog]);
+    }
+    public function donaci(){
+        $blog = Post::all();
+        return view('blog.donaci')->with(['blog' => $blog]);
+    }
+    public function citati(){
+        $blog = Post::all();
+        return view('blog.citati')->with(['blog' => $blog]);
+    }
+    public function kontakt(){
+        $blog = Post::all();
+        return view('blog.kontakt')->with(['blog' => $blog]);
+    }
+    public function test(){
+        $blog = Post::all();
+        return view('blog.test')->with(['blog' => $blog]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +53,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = Post::all();
+        // where('id', '>=' , 0)->orderByDesc('id')->get()
+        $blog = Post::all() ;
         return view('blog/index', compact('blog'));
     }
 
