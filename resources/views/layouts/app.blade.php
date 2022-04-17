@@ -94,8 +94,8 @@
     </div>
   </div>
   </header>
-    <div class="nav-scroller py-1 mb-2">
-      <nav class="nav d-flex " id="center" style="font-size: 14px;">
+    <div class="nav-scroller py-1 ">
+      <nav class="nav d-flex " id="center" style="font-size: 15px; ">
         <a class="p-2 text-white fw-bold" href="{{route('blog.forum')}}">ФОРУМ</a>
         <a class="p-2 text-white fw-bold" href="{{route('blog.kultura')}}">КУЛТУРА</a>
         <a class="p-2 text-white fw-bold" href="{{route('blog.intervju')}}">ИНТЕРВЈУ</a>
@@ -115,7 +115,7 @@
 
 @yield('content')
 
-<footer class="text-center fixed-bottom mt-4 text-lg-start" style="background-color: #dc1921;height:50px ">
+<footer class="text-center  mt-4 text-lg-start" style="background-color: #dc1921;height:50px ">
   <!-- Copyright -->
   <div class="text-center  text-white p-3" >
     © 2020 Copyright:

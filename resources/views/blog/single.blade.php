@@ -11,8 +11,9 @@
             
             <h1 class="p-1 fontres fw-bolder">{{$blog->title}}</h1>
             
-            <div class="d-flex justify-content-start align-items-baseline mb-2 ">
-              <h6 class="ps-2 fw-bolder" style="color: #dc1921">ANALITIKUM</h6>
+            <div class="d-flex justify-content-start align-items-center mb-2 ">
+              <img src="{{URL::asset('img\logo.jpg')}}" alt="profile Pic" height="" width="80">
+              {{-- <h6 class="ps-2 fw-bolder" style="color: #dc1921">ANALITIKUM</h6> --}}
               <p class="ps-2 card-text" style="margin: 0"><small class="text-muted">{{ date('M j, Y', strtotime($blog->created_at))}}</small></p>
               <p class="ps-2 card-text"><small class="text-muted"><i class="bi bi-eye-fill"></i>326</small></p>
             </div>
